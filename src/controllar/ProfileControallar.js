@@ -1,6 +1,9 @@
 var jwt = require('jsonwebtoken')
 const ProfileModel = require("../models/ProfileModel.js")
 
+exports.testApi = (req, res)=>{
+    res.status(200).json({status: "success", data: "secessfully Deploy"})
+}
 exports.CreateProfile = (req, res)=>{
 
     let reqBody = req.body;

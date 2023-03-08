@@ -32,7 +32,8 @@ app.use(limiter);
 
 // Mongo DB Database Connection
 
-let URL = 'mongodb://localhost:27017/Todo';
+// let URL = 'mongodb://localhost:27017/Todo';
+let URL = 'mongodb+srv://younoch295:Teletalk9@cluster0.3dxx8we.mongodb.net/?retryWrites=true&w=majority';
 let OPTION = { user: '', pass: '', autoIndex: true }
 mongoose.set("strictQuery", false);
 mongoose.connect(URL, OPTION, (err)=> {
